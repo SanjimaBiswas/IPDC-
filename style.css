@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "metropolis";
+  src: url(fonts/Metropolis-Regular.otf) format(opentype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "metropolis";
+  src: url(fonts/Metropolis-Medium.otf) format(opentype);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "metropolis";
+  src: url(fonts/Metropolis-ExtraBold.otf) format(opentype);
+  font-weight: 900;
+}
+
+:root {
+  --primary-pink: #ed017f;
+  --text-black: #010101;
+  --text-paragraph: #676767;
+  --background-white: #d9d9d9;
+  --button-white: #ffffff;
+  --text-grey: #999999;
+  --text-heading: #343434;
+  --text-subheading: #363940;
+}
+body {
+  font-family: "metropolis";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.37;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1398px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  padding: 17px 0;
+}
+.brand a {
+  display: block;
+  max-width: 154px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.navlinks,
+.btns {
+  display: flex;
+  align-items: center;
+}
+.navlinks li {
+  padding: 0 22px;
+}
+.navlinks li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--text-black);
+  font-weight: 600;
+  transition: 0.5s all ease-in-out;
+}
+.navlinks li a:hover {
+  color: var(--primary-pink);
+}
+/* .btns{
+    gap: 26px;
+} */
+.search {
+  margin-right: 13px;
+}
+
+.search i {
+  color: var(--primary-pink);
+  transform: scale(1.5);
+}
+.header-btn {
+  margin-left: 13px;
+}
+.cmn-btn {
+  display: inline-block;
+  background: var(--primary-pink);
+  color: var(--button-white);
+  padding: 17px 30px;
+  border-radius: 4px;
+  letter-spacing: 4px;
+  transition: 0.5s all ease-in-out;
+  text-transform: uppercase;
+}
+.cmn-btn span {
+  text-transform: lowercase;
+}
+.cmn-btn:hover {
+  background-color: var(--text-black);
+  color: var(--primary-pink);
+}
+.cmn-btn2 {
+  display: inline-block;
+  color: var(--primary-pink);
+  padding: 17px 30px;
+  border: 2px solid var(--primary-pink);
+  border-radius: 4px;
+  letter-spacing: 4px;
+  transition: 0.5s all ease-in-out;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+}
+.cmn-btn2:hover {
+  background-color: var(--text-black);
+  color: var(--button-white);
+  border: 2px solid var(--text-black);
+}
+.banner {
+  /* background-color: var(--background-white); */
+  min-height: 657px;
+  padding: 30px 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col45 {
+  max-width: 45%;
+  flex: 0 0 45%;
+  padding: 0 15px;
+}
+.col55 {
+  max-width: 55%;
+  flex: 0 0 55%;
+  padding: 0 15px;
+}
+h1 {
+  font-family: "metropolis";
+  font-size: 57px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: var(--text-black);
+}
+
+.banner-content h1 {
+  margin-bottom: 40px;
+  max-width: 80%;
+}
+.banner-content p {
+  margin-bottom: 40px;
+  max-width: 70%;
+  color: var(--text-paragraph);
+}
+.banner-btn {
+  margin-bottom: 40px;
+}
+.banner-btn .cmn-btn {
+  margin-right: 20px;
+}
+.contact {
+  display: flex;
+}
+.mobilecontact {
+  display: flex;
+  align-items: center;
+  padding-right: 22px;
+  border-right: 2px solid var(--text-grey);
+}
+.mobileicon {
+  margin-right: 16px;
+
+  transform: scale(1.5);
+}
+.mobileicon i {
+  color: var(--primary-pink);
+}
+.num {
+  font-size: 17px;
+}
+.socials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-left: 16px;
+}
+.socials i {
+  display: inline-block;
+  transform: scale(1.5);
+  gap: 16px;
+}
+.banner-content2 {
+  background: url(images/bannerimage.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 657px;
+  position: relative;
+}
+.car {
+  max-width: 197px;
+  padding: 24px 27px;
+  background-color: var(--button-white);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-heading);
+  box-shadow: 3px 1px 10px var(--text-grey);
+}
+.home {
+  max-width: 210px;
+  padding: 24px 27px;
+  background-color: var(--button-white);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-heading);
+  box-shadow: 3px 1px 10px var(--text-grey);
+  position: absolute;
+  transform: translate(550px, 80px);
+}
+.cmn-gap {
+  padding: 100px 0;
+}
+h3 {
+  font-family: "metropolis";
+  font-size: 36px;
+  color: var(--text-heading);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.heading-para {
+  max-width: 622px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  color: var(--text-paragraph);
+  margin-bottom: 30px;
+  text-align: center;
+}
+.col25 {
+  max-width: 25%;
+  flex: 0 0 25%;
+  padding: 0 15px;
+}
+.h4-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-subheading);
+  text-align: start;
+  margin-bottom: 18px;
+  text-transform: capitalize;
+}
+.feature figure {
+  align-items: start;
+  margin-bottom: 18px;
+}
+.feature p {
+  text-align: start;
+  font-size: 14px;
+  color: var(--text-paragraph);
+  max-width: 160px;
+  margin-bottom: 18px;
+}
+
+.feature {
+  max-width: 259px;
+  padding: 24px 24px;
+}
+.whychooseus .row {
+  align-items: center;
+}
+.service .container{
+  background-color: #FEF9FC;
+}
+.service figcaption{
+  display: flex;
+  gap: 22px;
+  
+}
+figcaption{
+  align-items: center;
+  max-width: 254px;
+}
+.h5-title{
+  font-family: "metropolis";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-transform: uppercase;
+  max-width: 195px;
+  
+}
+.service figure{
+  margin-bottom: 10px;
+  max-width: 254px;
+  border-radius: 10px;
+  
+}
+.service img{
+  width: 100%;
+  height: 365px;
+  object-fit: cover;
+}
+.arrow{
+  width: 37px;
+  height: 37px;
+  border-radius: 50px;
+  background-color: #FCE0EF;
+  padding: 8px 8px;
+  display: flex;
+  align-items: center;
+}
+.arrow i{
+  color: var(--primary-pink);
+}
+.h2-title{
+  font-family: "metropolis";
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--text-heading);
+  margin-bottom: 8px;
+}
+.h2-title span{
+  font-size: 30px;
+  color: var(--primary-pink);
+  text-transform: lowercase;
+  line-height: 1.4;
+}
+.p-title{
+  font-size: 16px;
+  color: var(--text-paragraph);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.values{
+  max-width: 172px;
+  height: 108px;
+  text-align: center;
+  align-items: center;
+}
+.result .heading-para{
+  margin-bottom: 50px;
+}
+.result .row{
+  margin-bottom: 40px;
+  align-items: center;
+}
+.h2-title span.black{
+  font-size:30px;
+  color: var(--text-heading);
+}
+.footer .socials{
+  margin-left: 0px;
+}
+.footer-heading{
+  font-family: "metropolis";
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: var(--text-black);
+  line-height: 1.2;
+}
+.footer-para{
+  font-family: "metropolis";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-paragraph);
+  margin-bottom: 15px;
+  line-height: 1.5;
+
+}
+.col20{
+  max-width: 20%;
+  flex: 0 0 20%;
+  padding: 0 15px;
+  align-items: center;
+  
+}
+.footer-linkheading{
+  font-family: "metropolis";
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--text-heading);
+  margin-bottom: 15px;
+  text-align: start;
+  text-transform: capitalize;
+}
+.footerlinks li a{
+  font-family: "metropolis";
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-paragraph);
+  
+  
+}
+.footerlinks li a:hover{
+  color: var(--primary-pink);
+}
+.footerlinks li{
+  padding: 6px 0;
+  text-align: start;
+}
+.footer .mobilecontact{
+  /* align-items: center; */
+  padding: 0 0;
+  min-height: 209px;
+  justify-content: center;
+  border: 0;
+}
